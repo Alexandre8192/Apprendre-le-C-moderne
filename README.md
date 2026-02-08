@@ -1,10 +1,10 @@
-# Apprendre le C++ Moderne 🚀
+# Apprendre le C et le C++ Moderne 🚀
 
-Bienvenue dans ce répertoire français pour apprendre le **C++ moderne (C++23/26)** de manière ludique et progressive !
+Bienvenue dans ce répertoire français pour apprendre le **C11 à C20** et découvrir les bases du **C++ moderne**, avec une **introduction à C++23**, de manière ludique et progressive !
 
 ## 📚 À propos
 
-Ce répertoire est conçu pour les **débutants** qui souhaitent apprendre le C++ en utilisant les dernières fonctionnalités du langage (C++20, C++23 et C++26). Vous y trouverez :
+Ce répertoire est conçu pour les **débutants** qui souhaitent apprendre le C (C11 à C20) et s'initier au C++ moderne (C++20 avec un aperçu C++23). Vous y trouverez :
 
 - 📖 Des **cours théoriques** détaillés
 - 💻 Des **exemples de code** commentés et fonctionnels
@@ -60,6 +60,7 @@ Pour suivre ce cours, vous aurez besoin de :
 - Ranges (à venir)
 - Coroutines (à venir)
 - Modules (à venir)
+> Roadmap : les thèmes avancés C++23/26 (concepts, ranges, modules, coroutines) seront introduits progressivement avec des exemples guidés.
 
 ### Chapitre 4 : Bonnes pratiques
 - Style de code
