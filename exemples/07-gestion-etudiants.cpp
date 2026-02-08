@@ -135,8 +135,10 @@ int main() {
  * - Algorithmes STL (sort, max_element)
  * - Move semantics
  * - Const-correctness
- * 
- * Compilation:
- * g++ -std=c++20 -Wall -Wextra 07-gestion-etudiants.cpp -o gestion
- * ./gestion
  */
+
+/*
+   * Compilation et exécution :
+   * g++ -std=c++20 -Wall -Wextra -Wpedantic -O2 07-gestion-etudiants.cpp -o gestion
+   * ./gestion
+*/

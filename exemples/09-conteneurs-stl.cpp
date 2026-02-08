@@ -122,8 +122,10 @@ int main() {
  * - Range-based for loops
  * - Algorithmes STL (max_element)
  * - Lambdas avec algorithmes
- * 
- * Compilation:
- * g++ -std=c++20 -Wall -Wextra 09-conteneurs-stl.cpp -o conteneurs
- * ./conteneurs
  */
+
+/*
+   * Compilation et exécution :
+   * g++ -std=c++20 -Wall -Wextra -Wpedantic -O2 09-conteneurs-stl.cpp -o conteneurs
+   * ./conteneurs
+*/

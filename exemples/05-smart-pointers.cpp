@@ -65,7 +65,7 @@ int main() {
 }
 
 /*
- * Compilation:
- * g++ -std=c++20 05-smart-pointers.cpp -o smart_pointers
- * ./smart_pointers
- */
+   * Compilation et exécution :
+   * g++ -std=c++20 -Wall -Wextra -Wpedantic -O2 05-smart-pointers.cpp -o smart_pointers
+   * ./smart_pointers
+*/

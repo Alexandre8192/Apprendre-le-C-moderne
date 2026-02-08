@@ -67,7 +67,7 @@ int main() {
 }
 
 /*
- * Compilation:
- * g++ -std=c++20 06-lambdas.cpp -o lambdas
- * ./lambdas
- */
+   * Compilation et exécution :
+   * g++ -std=c++20 -Wall -Wextra -Wpedantic -O2 06-lambdas.cpp -o lambdas
+   * ./lambdas
+*/
