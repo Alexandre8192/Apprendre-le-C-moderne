@@ -73,9 +73,18 @@ Pour suivre ce cours, vous aurez besoin de :
 
 Les contributions sont les bienvenues ! N'hésitez pas à proposer des améliorations, corrections ou nouveaux contenus.
 
+Pour comprendre comment gérer les branches et contribuer efficacement, consultez le [Guide de Gestion Git](GESTION-GIT.md).
+
 ## 📝 Licence
 
 Ce projet est sous licence libre pour l'apprentissage.
+
+## 📋 Documentation du Projet
+
+- [Guide de Gestion Git](GESTION-GIT.md) - Comprendre les Pull Requests, Merges et la gestion des branches
+- [Feuille de Route](ROADMAP.md) - Plan de développement du cours
+- [Améliorations](AMELIORATIONS.md) - Historique des améliorations
+- [Compilation](COMPILATION.md) - Guide de compilation du code
 
 ## 💡 Ressources additionnelles
 
