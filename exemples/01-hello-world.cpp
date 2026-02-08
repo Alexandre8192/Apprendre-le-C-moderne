@@ -13,10 +13,8 @@ int main() {
 }
 
 /*
- * Compilation:
- * g++ -std=c++23 01-hello-world.cpp -o hello
- * 
- * Ou si std::print n'est pas disponible, utilisez:
- * g++ -std=c++20 01-hello-world.cpp -o hello
- * et remplacez std::println par std::cout
- */
+   * Compilation et exécution :
+   * Requiert C++23 (std::println).
+   * g++ -std=c++23 -Wall -Wextra -Wpedantic -O2 01-hello-world.cpp -o hello
+   * ./hello
+*/

@@ -24,7 +24,7 @@ int main() {
 }
 
 /*
- * Compilation:
- * g++ -std=c++20 02-variables-types.cpp -o variables
- * ./variables
- */
+   * Compilation et exécution :
+   * g++ -std=c++20 -Wall -Wextra -Wpedantic -O2 02-variables-types.cpp -o variables
+   * ./variables
+*/

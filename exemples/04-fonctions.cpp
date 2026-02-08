@@ -55,7 +55,7 @@ int main() {
 }
 
 /*
- * Compilation:
- * g++ -std=c++20 04-fonctions.cpp -o fonctions
- * ./fonctions
- */
+   * Compilation et exécution :
+   * g++ -std=c++20 -Wall -Wextra -Wpedantic -O2 04-fonctions.cpp -o fonctions
+   * ./fonctions
+*/
