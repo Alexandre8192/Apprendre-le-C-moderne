@@ -191,7 +191,29 @@ Utilisez `std::chrono::steady_clock` et `std::chrono::duration`.
 
 ---
 
-## 📂 Solutions
+## 🎯 Exercice 9 : Classes - Bibliothèque
+
+Créez une classe `Livre` et une classe `Bibliotheque` :
+- `Livre` : titre, auteur, année, ISBN
+- `Bibliotheque` : gère une collection de livres
+  - Ajouter/supprimer des livres
+  - Rechercher par titre ou auteur
+  - Afficher tous les livres
+
+**Fichier :** `exercice09_bibliotheque.cpp`
+
+---
+
+## 🎯 Exercice 10 : Héritage - Système de Formes
+
+Créez une hiérarchie de classes pour des formes géométriques :
+- Classe abstraite `Forme` avec méthodes virtuelles `aire()` et `perimetre()`
+- Classes dérivées : `Cercle`, `Rectangle`, `Triangle`
+- Utilisez le polymorphisme pour calculer l'aire totale d'un vecteur de formes
+
+**Fichier :** `exercice10_formes.cpp`
+
+---
 
 Les solutions complètes sont disponibles dans [solutions/intermediaire/](solutions/intermediaire/).
 

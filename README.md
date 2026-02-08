@@ -48,16 +48,18 @@ Pour suivre ce cours, vous aurez besoin de :
 - Opérateurs et expressions
 - Structures de contrôle (if, switch, boucles)
 - Fonctions
+- **Classes et objets** ✨ NOUVEAU
+- **Héritage et polymorphisme** ✨ NOUVEAU
 
 ### Chapitre 3 : C++ Moderne (C++20/23/26)
-- Auto et déduction de type
-- Références et pointeurs
-- Smart pointers
+- Smart pointers (unique_ptr, shared_ptr, weak_ptr)
 - Lambda expressions
-- Concepts
-- Ranges
-- Coroutines
-- Modules
+- **Conteneurs STL** ✨ NOUVEAU
+- **Gestion des erreurs (exceptions, std::optional)** ✨ NOUVEAU
+- Concepts (à venir)
+- Ranges (à venir)
+- Coroutines (à venir)
+- Modules (à venir)
 
 ### Chapitre 4 : Bonnes pratiques
 - Style de code

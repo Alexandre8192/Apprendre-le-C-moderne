@@ -20,6 +20,8 @@ Ce dossier contient des exemples pratiques de code C++ moderne commentés et fon
 | [`05-smart-pointers.cpp`](05-smart-pointers.cpp) | Gestion mémoire moderne | unique_ptr, shared_ptr, RAII |
 | [`06-lambdas.cpp`](06-lambdas.cpp) | Expressions lambda | Captures, lambdas génériques, STL |
 | [`07-gestion-etudiants.cpp`](07-gestion-etudiants.cpp) | Application complète | Classes, smart pointers, lambdas, STL |
+| **[`08-poo-polymorphisme.cpp`](08-poo-polymorphisme.cpp)** ✨ NOUVEAU | POO et héritage | Classes, héritage, polymorphisme, virtual |
+| **[`09-conteneurs-stl.cpp`](09-conteneurs-stl.cpp)** ✨ NOUVEAU | Conteneurs STL | vector, map, set, unordered_map |
 
 ## 🔨 Compilation
 

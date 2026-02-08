@@ -60,6 +60,25 @@ Bienvenue dans les chapitres de cours pour apprendre le C++23/26 !
   - Récursivité
   - Templates de fonctions
 
+- **✨ [2.5 - Classes et Objets](02-bases/05-classes-objets.md)** NOUVEAU
+  - Définition de classes
+  - Constructeurs et destructeurs
+  - Encapsulation (public, private, protected)
+  - Getters et setters
+  - Méthodes const et static
+  - RAII
+
+- **✨ [2.6 - Héritage et Polymorphisme](02-bases/06-heritage-polymorphisme.md)** NOUVEAU
+  - Héritage de classes
+  - Fonctions virtuelles
+  - Polymorphisme
+  - Classes abstraites
+  - override et final
+  - Destructeurs virtuels
+
+**Durée estimée** : 10-14 heures
+  - Templates de fonctions
+
 **Durée estimée** : 6-8 heures
 
 ---
@@ -83,15 +102,29 @@ Bienvenue dans les chapitres de cours pour apprendre le C++23/26 !
   - Utilisation avec les algorithmes STL
   - Lambdas récursives (C++23)
 
-- 🚧 **À venir** :
-  - 3.3 - Concepts (C++20)
-  - 3.4 - Ranges (C++20)
-  - 3.5 - Coroutines (C++20)
-  - 3.6 - Modules (C++20)
-  - 3.7 - std::format (C++20)
-  - 3.8 - Nouveautés C++23/26
+- **✨ [3.3 - Conteneurs STL](03-moderne/03-conteneurs.md)** NOUVEAU
+  - vector, array, deque
+  - map, unordered_map
+  - set, unordered_set
+  - list
+  - Choix du bon conteneur
 
-**Durée estimée** : 8-10 heures
+- **✨ [3.4 - Gestion des Erreurs](03-moderne/04-exceptions-optional.md)** NOUVEAU
+  - Exceptions (try/catch/throw)
+  - Types d'exceptions standard
+  - Exceptions personnalisées
+  - std::optional (C++17)
+  - Quand utiliser exceptions vs optional
+
+- 🚧 **À venir** :
+  - 3.5 - Algorithmes STL
+  - 3.6 - Concepts (C++20)
+  - 3.7 - Ranges (C++20)
+  - 3.8 - std::format (C++20)
+  - 3.9 - Coroutines (C++20)
+  - 3.10 - Modules (C++20)
+
+**Durée estimée** : 12-16 heures
 
 ---
 
