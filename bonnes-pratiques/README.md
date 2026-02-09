@@ -1,5 +1,7 @@
 # Guide des Bonnes Pratiques C++ Moderne
 
+[⬅️ Retour au README principal](../README.md) | [📘 Chapitres](../chapitres/) | [💻 Exemples](../exemples/) | [🧪 Exercices](../exercices/)
+
 ## 🎯 Objectif
 
 Ce guide présente les meilleures pratiques pour écrire du code C++ moderne, sûr, et maintenable.
@@ -12,6 +14,10 @@ Ce guide présente les meilleures pratiques pour écrire du code C++ moderne, s�
 4. [Fonctions](#fonctions)
 5. [Gestion des Erreurs](#gestion-des-erreurs)
 6. [Performance](#performance)
+7. [Compilation et Flags](#compilation-et-flags)
+8. [Organisation du Code](#organisation-du-code)
+9. [Documentation](#documentation)
+10. [Tests](#tests)
 
 ---
 
@@ -335,6 +341,93 @@ for (int i = 0; i < 1000; ++i) {
 
 ---
 
+## Compilation et Flags
+
+### ✅ Compiler avec tous les warnings
+
+```bash
+g++ -std=c++20 -Wall -Wextra -Wpedantic -Werror -O2 fichier.cpp
+```
+
+### ✅ Utiliser les sanitizers en développement
+
+**AddressSanitizer (fuites mémoire, use-after-free)**
+
+```bash
+g++ -std=c++20 -Wall -Wextra -g -fsanitize=address fichier.cpp
+```
+
+**UndefinedBehaviorSanitizer**
+
+```bash
+g++ -std=c++20 -Wall -Wextra -g -fsanitize=undefined fichier.cpp
+```
+
+---
+
+## Organisation du Code
+
+### ✅ Séparation headers/implémentation (projets moyens/grands)
+
+Structure recommandée :
+
+```
+mon_projet/
+├── include/
+│   └── gestionnaire.hpp
+├── src/
+│   └── gestionnaire.cpp
+└── main.cpp
+```
+
+### ✅ Nommage des fichiers
+
+- Choisir un style unique : `snake_case` ou `PascalCase`.
+- Éviter les mélanges dans un même projet.
+
+---
+
+## Documentation
+
+### ✅ Commentaires pertinents
+
+```cpp
+// ✅ BON : expliquer le \"pourquoi\"
+if (solde < montant) {
+    // Empêche un dépassement de découvert
+    throw std::runtime_error(\"Solde insuffisant\");
+}
+
+// ❌ MAUVAIS : répète le \"quoi\"
+solde -= montant;  // Décrémente solde
+```
+
+### ✅ Documentation Doxygen (optionnel)
+
+```cpp
+/// Calcule la moyenne d'une liste de notes.
+/// @param notes Liste des notes (0-20).
+/// @return La moyenne, ou 0.0 si liste vide.
+double moyenne(const std::vector<double>& notes);
+```
+
+---
+
+## Tests
+
+### ✅ Écrire des tests unitaires
+
+Frameworks populaires : **Google Test**, **Catch2**, **doctest**.
+
+```cpp
+// Exemple rapide avec doctest
+TEST_CASE(\"addition\") {
+    CHECK(2 + 2 == 4);
+}
+```
+
+---
+
 ## 📚 Ressources
 
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/)
@@ -361,3 +454,9 @@ Avant de committer votre code, vérifiez :
 ```bash
 g++ -std=c++23 -Wall -Wextra -Wpedantic -O2 fichier.cpp
 ```
+
+---
+
+## 🚀 Prochaine étape
+
+Appliquez ces bonnes pratiques dans vos exercices : [`/exercices`](../exercices/).

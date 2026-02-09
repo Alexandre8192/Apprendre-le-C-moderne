@@ -1,27 +1,22 @@
 # Exercices Pratiques C++
 
+[⬅️ Retour au README principal](../README.md) | [📘 Chapitres](../chapitres/) | [💻 Exemples](../exemples/) | [🛠️ Compilation](../COMPILATION.md)
+
 Bienvenue dans la section exercices ! Ici, vous trouverez des exercices progressifs pour pratiquer vos compétences en C++ moderne.
 
 ## 📂 Structure
 
 - **[01-debutant.md](01-debutant.md)** : Exercices pour débuter (8 exercices)
-- **[02-intermediaire.md](02-intermediaire.md)** : Exercices intermédiaires (10 exercices)
+- **[02-intermediaire.md](02-intermediaire.md)** : Exercices intermédiaires (13 exercices)
 
 ## 🎯 Comment utiliser ces exercices ?
 
-### 1. Choisissez votre niveau
-
-Commencez par les exercices débutants si vous êtes nouveau en C++, ou passez directement aux exercices intermédiaires si vous maîtrisez les bases.
-
-### 2. Lisez attentivement l'énoncé
-
-Chaque exercice contient :
-- Un énoncé clair
-- Des exemples d'exécution
-- Des indices cachés (cliquez pour révéler)
-- Des solutions complètes (consultez après avoir essayé !)
-
-### 3. Créez votre fichier
+1. **Choisissez votre niveau**
+2. **Lisez attentivement l'énoncé**
+3. **Créez votre fichier**
+4. **Écrivez votre solution**
+5. **Compilez et testez**
+6. **Comparez avec la solution**
 
 ```bash
 cd exercices
@@ -29,20 +24,10 @@ cd exercices
 touch exercice01.cpp
 ```
 
-### 4. Écrivez votre solution
-
-Essayez de résoudre le problème par vous-même avant de consulter les indices ou solutions.
-
-### 5. Compilez et testez
-
 ```bash
-g++ -std=c++20 -Wall -Wextra exercice01.cpp -o exercice01
+g++ -std=c++20 -Wall -Wextra -Wpedantic exercice01.cpp -o exercice01
 ./exercice01
 ```
-
-### 6. Comparez avec la solution
-
-Une fois votre solution fonctionnelle, comparez-la avec la solution proposée pour découvrir des approches alternatives.
 
 ## 📊 Progression suggérée
 
@@ -72,69 +57,35 @@ Une fois votre solution fonctionnelle, comparez-la avec la solution proposée po
 ✓ Exercice 8 : Algorithmes avec ranges
 ✓ Exercice 9 : Mini base de données
 ✓ Exercice 10 : Chronomètre
+✓ Exercice 11 : Analyse CSV avec algos STL
+✓ Exercice 12 : Gestionnaire de mots de passe
+✓ Exercice 13 : Simulateur de file d'attente
 ```
 
 ## 💡 Conseils pour réussir
 
 ### ✅ Bonnes pratiques
 
-- **Testez progressivement** : Écrivez un peu de code, testez, puis continuez
-- **Lisez les messages d'erreur** : Ils sont vos amis !
-- **Utilisez les warnings** : Compilez avec `-Wall -Wextra`
-- **Commentez votre code** : Expliquez votre raisonnement
-- **Testez les cas limites** : Que se passe-t-il avec 0, -1, des valeurs extrêmes ?
+- Testez progressivement
+- Lisez les messages d'erreur
+- Utilisez les warnings (`-Wall -Wextra -Wpedantic`)
+- Commentez votre code
+- Testez les cas limites
 
 ### ❌ Erreurs courantes à éviter
 
 - Ne pas initialiser les variables
 - Oublier les `break` dans les `switch`
-- Confusion entre `=` (assignation) et `==` (comparaison)
-- Fuites mémoire avec `new`/`delete` (utilisez les smart pointers !)
+- Confusion entre `=` et `==`
+- Fuites mémoire avec `new`/`delete`
 - Ne pas vérifier les entrées utilisateur
-
-## 🎓 Après les exercices
-
-Une fois ces exercices terminés, vous pouvez :
-
-1. **Créer vos propres projets** : Appliquez ce que vous avez appris
-2. **Contribuer à des projets open source** : Pratiquez sur du vrai code
-3. **Explorer les fonctionnalités avancées** : Concepts, coroutines, modules
-4. **Lire des livres** : "Effective Modern C++" de Scott Meyers
 
 ## 📚 Ressources complémentaires
 
-- [Exemples de code](../exemples/) : Pour voir des implémentations complètes
-- [Chapitres de cours](../chapitres/) : Pour revoir la théorie
-- [Bonnes pratiques](../bonnes-pratiques/) : Pour améliorer votre style
+- [Exemples de code](../exemples/)
+- [Chapitres de cours](../chapitres/)
+- [Bonnes pratiques](../bonnes-pratiques/)
 
-## 🏆 Challenges supplémentaires
+## 🚀 Prochaine étape
 
-Une fois les exercices standards terminés, essayez ces défis :
-
-### Défi 1 : Refactoring
-Reprenez vos anciens exercices et améliorez-les avec les techniques modernes C++.
-
-### Défi 2 : Performance
-Optimisez vos solutions pour gérer de grandes quantités de données.
-
-### Défi 3 : Tests
-Écrivez des tests unitaires pour vos fonctions.
-
-### Défi 4 : Documentation
-Documentez votre code avec Doxygen.
-
-## 🆘 Besoin d'aide ?
-
-Si vous êtes bloqué :
-
-1. Relisez l'énoncé calmement
-2. Consultez les indices fournis
-3. Relisez les chapitres de cours correspondants
-4. Regardez les exemples similaires
-5. En dernier recours, consultez la solution
-
-**N'oubliez pas** : Faire des erreurs fait partie de l'apprentissage !
-
----
-
-**Bon courage et bon codage ! 💻🚀**
+Lorsque vous maîtrisez un niveau, passez au suivant puis appliquez ces compétences dans un projet personnel.

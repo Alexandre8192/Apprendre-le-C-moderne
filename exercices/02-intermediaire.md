@@ -191,27 +191,61 @@ Utilisez `std::chrono::steady_clock` et `std::chrono::duration`.
 
 ---
 
-## 🎯 Exercice 9 : Classes - Bibliothèque
+## 🎯 Exercice 11 : Analyse de fichier CSV avec algorithmes STL
 
-Créez une classe `Livre` et une classe `Bibliotheque` :
-- `Livre` : titre, auteur, année, ISBN
-- `Bibliotheque` : gère une collection de livres
-  - Ajouter/supprimer des livres
-  - Rechercher par titre ou auteur
-  - Afficher tous les livres
+Créez un programme qui :
+- Lit un fichier CSV de ventes (produit, quantité, prix)
+- Utilise `std::transform` pour calculer le total par ligne
+- Utilise `std::accumulate` pour le chiffre d'affaires total
+- Utilise `std::sort` pour trier par CA décroissant
+- Utilise `std::copy_if` pour filtrer les ventes > seuil
+- Affiche des statistiques
 
-**Fichier :** `exercice09_bibliotheque.cpp`
+**Fichier :** `exercice11_csv_algos.cpp`
+
+<details>
+<summary>💡 Indice</summary>
+
+Utilisez `std::getline`, `std::stringstream` et des structures pour stocker les données.
+</details>
 
 ---
 
-## 🎯 Exercice 10 : Héritage - Système de Formes
+## 🎯 Exercice 12 : Gestionnaire de mots de passe (simple)
 
-Créez une hiérarchie de classes pour des formes géométriques :
-- Classe abstraite `Forme` avec méthodes virtuelles `aire()` et `perimetre()`
-- Classes dérivées : `Cercle`, `Rectangle`, `Triangle`
-- Utilisez le polymorphisme pour calculer l'aire totale d'un vecteur de formes
+Créez un gestionnaire qui :
+- Stocke des entrées (service, login, mot de passe)
+- Chiffre les données avec XOR simple (éducatif uniquement !)
+- Sauvegarde/charge depuis fichier
+- Recherche par service
+- Utilise smart pointers
 
-**Fichier :** `exercice10_formes.cpp`
+**Fichier :** `exercice12_mdp.cpp`
+
+<details>
+<summary>💡 Indice</summary>
+
+Un XOR simple peut se faire avec une clé et un `std::string` : `c ^ key[i % key.size()]`.
+</details>
+
+---
+
+## 🎯 Exercice 13 : Simulateur de file d'attente
+
+Modélisez une file d'attente (caisse de supermarché) :
+- Classe `Client` (nom, nb articles)
+- `std::queue` pour la file
+- Simulation temporelle (clients arrivent, sont servis)
+- Statistiques (temps attente moyen, etc.)
+- Utilisez `<chrono>` pour timing
+
+**Fichier :** `exercice13_file_attente.cpp`
+
+<details>
+<summary>💡 Indice</summary>
+
+Vous pouvez simuler le temps avec `std::chrono::milliseconds` et un compteur global.
+</details>
 
 ---
 
