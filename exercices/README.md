@@ -16,7 +16,7 @@ Bienvenue dans la section exercices ! Ici, vous trouverez des exercices progress
 3. **Créez votre fichier**
 4. **Écrivez votre solution**
 5. **Compilez et testez**
-6. **Comparez avec la solution**
+6. **Comparez avec la solution (si disponible)**
 
 ```bash
 cd exercices

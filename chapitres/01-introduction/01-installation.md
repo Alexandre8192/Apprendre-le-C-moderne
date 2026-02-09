@@ -6,7 +6,7 @@ Installer un environnement de développement C++ moderne pour commencer à progr
 
 ## 📦 Choix du compilateur
 
-Pour utiliser les fonctionnalités C++23/26, vous avez besoin d'un compilateur récent :
+Pour utiliser les fonctionnalités C++20/23 du cours, vous avez besoin d'un compilateur récent :
 
 ### Option 1 : GCC (Linux/macOS/Windows)
 

@@ -1,12 +1,12 @@
-# Apprendre le C et le C++ Moderne 🚀
+# Apprendre le C++ Moderne 🚀
 
 [![Compile Examples](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/compile-examples.yml/badge.svg)](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/compile-examples.yml)
 
-Bienvenue dans ce répertoire français pour apprendre le **C11 à C20** et découvrir les bases du **C++ moderne**, avec une **introduction à C++23**, de manière ludique et progressive !
+Bienvenue dans ce répertoire francophone pour apprendre le **C++ moderne** (bases solides + pratiques actuelles), avec un focus sur **C++20** et une ouverture vers **C++23**.
 
 ## 📚 À propos
 
-Ce répertoire est conçu pour les **débutants** qui souhaitent apprendre le C (C11 à C20) et s'initier au C++ moderne (C++20 avec un aperçu C++23). Vous y trouverez :
+Ce répertoire est conçu pour les **débutants** qui souhaitent apprendre le C++ de manière progressive. Vous y trouverez :
 
 - 📖 Des **cours théoriques** détaillés
 - 💻 Des **exemples de code** commentés et fonctionnels
@@ -19,7 +19,7 @@ Ce répertoire est conçu pour les **débutants** qui souhaitent apprendre le C 
 .
 ├── chapitres/          # Cours théoriques organisés par thème
 ├── exemples/           # Exemples de code fonctionnels
-├── exercices/          # Exercices pratiques avec solutions
+├── exercices/          # Exercices pratiques (solutions ajoutées progressivement)
 ├── bonnes-pratiques/   # Guide des bonnes pratiques C++ moderne
 └── projets/            # Mini-projets fil rouge
 ```
@@ -28,7 +28,7 @@ Ce répertoire est conçu pour les **débutants** qui souhaitent apprendre le C 
 
 Pour suivre ce cours, vous aurez besoin de :
 
-- Un compilateur C++23/26 (GCC 13+, Clang 16+, ou MSVC 2022+)
+- Un compilateur C++20 avec un bon support C++23 (GCC 13+, Clang 16+, ou MSVC 2022+)
 - Un éditeur de texte ou IDE (Visual Studio Code, CLion, Visual Studio, etc.)
 - Des connaissances de base en programmation (optionnel mais recommandé)
 
@@ -54,7 +54,7 @@ Pour suivre ce cours, vous aurez besoin de :
 - **Classes et objets** ✨ NOUVEAU
 - **Héritage et polymorphisme** ✨ NOUVEAU
 
-### Chapitre 3 : C++ Moderne (C++20/23/26)
+### Chapitre 3 : C++ Moderne (C++11/14/17/20 + aperçu C++23)
 - Smart pointers (unique_ptr, shared_ptr, weak_ptr)
 - Lambda expressions
 - **Conteneurs STL** ✨ NOUVEAU
@@ -67,7 +67,7 @@ Pour suivre ce cours, vous aurez besoin de :
 - Ranges (à venir)
 - Coroutines (à venir)
 - Modules (à venir)
-> Roadmap : les thèmes avancés C++23/26 (concepts, ranges, modules, coroutines) seront introduits progressivement avec des exemples guidés.
+> Roadmap : les thèmes avancés (concepts, ranges, modules, coroutines) seront introduits progressivement avec des exemples guidés.
 
 ### Chapitre 4 : Bonnes pratiques
 - Style de code
@@ -83,6 +83,7 @@ Les contributions sont les bienvenues ! N'hésitez pas à proposer des améliora
 ## 📝 Licence
 
 Ce projet est sous licence libre pour l'apprentissage.
+Consultez le fichier [`LICENSE`](LICENSE) (MIT).
 
 ## 💡 Ressources additionnelles
 

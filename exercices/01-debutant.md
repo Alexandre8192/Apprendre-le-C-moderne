@@ -176,7 +176,7 @@ Utilisez un `std::vector<double>` pour stocker les nombres.
 
 ## 📂 Solutions
 
-Les solutions sont disponibles dans le dossier [solutions/](solutions/) une fois que vous avez essayé !
+Les solutions sont publiées progressivement dans [solutions/](solutions/). Essayez d'abord par vous-même, puis comparez quand une solution est disponible.
 
 ## 🚀 Pour aller plus loin
 

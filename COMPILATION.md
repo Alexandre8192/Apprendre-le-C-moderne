@@ -8,8 +8,8 @@ Guide pratique pour compiler et exécuter les exemples et exercices de ce cours.
 
 ## ✅ Compilateurs recommandés et versions minimales
 
-- **GCC 11+** pour un support C++20 complet
-- **Clang 14+** pour un support C++20 complet
+- **GCC 13+** pour un bon support C++20/23
+- **Clang 16+** pour un bon support C++20/23
 - **MSVC 2022+** pour C++20/23
 
 ### Vérifier la version

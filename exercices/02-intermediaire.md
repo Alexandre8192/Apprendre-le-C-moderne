@@ -249,7 +249,7 @@ Vous pouvez simuler le temps avec `std::chrono::milliseconds` et un compteur glo
 
 ---
 
-Les solutions complètes sont disponibles dans [solutions/intermediaire/](solutions/intermediaire/).
+Les solutions de ce niveau sont publiées progressivement dans [solutions/intermediaire/](solutions/intermediaire/).
 
 ## 🚀 Prochain niveau
 

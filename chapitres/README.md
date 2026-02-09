@@ -2,7 +2,7 @@
 
 [⬅️ Retour au README principal](../README.md) | [📘 Exemples](../exemples/) | [🧪 Exercices](../exercices/) | [🛠️ Compilation](../COMPILATION.md)
 
-Bienvenue dans les chapitres de cours pour apprendre le **C11 à C20** et découvrir le **C++ moderne** (avec un aperçu C++23).
+Bienvenue dans les chapitres de cours pour apprendre le **C++ moderne** (fondamentaux + pratiques actuelles, avec un aperçu C++23).
 
 ## 📚 Plan du cours
 
@@ -32,7 +32,7 @@ Bienvenue dans les chapitres de cours pour apprendre le **C11 à C20** et décou
 
 ---
 
-### ✨ Chapitre 3 : C++ Moderne (C++11/14/17/20)
+### ✨ Chapitre 3 : C++ Moderne (C++11/14/17/20 + aperçu C++23)
 
 **Objectif** : Découvrir les fonctionnalités modernes du C++.
 

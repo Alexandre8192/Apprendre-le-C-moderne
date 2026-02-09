@@ -469,4 +469,4 @@ int main() {
 
 ## 📚 Prochaine étape
 
-Passez au [Chapitre 3 : Conteneurs STL](../03-moderne/03-conteneurs.md)
+Passez au [Chapitre 3 : Smart Pointers](../03-moderne/01-smart-pointers.md)
