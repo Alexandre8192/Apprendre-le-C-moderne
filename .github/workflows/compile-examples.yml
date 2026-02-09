@@ -6,11 +6,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04  # Ubuntu 24.04 has better support for newer compilers
     strategy:
       fail-fast: false
       matrix:
-        compiler: [gcc-11, gcc-12, gcc-13, clang-14, clang-15]
+        compiler: [gcc-11, gcc-12, gcc-13, clang-14, clang-15, clang-17, clang-18]
 
     steps:
       - name: Checkout
@@ -27,6 +27,12 @@ jobs:
           else
             version="${{ matrix.compiler }}"
             version="${version#clang-}"
+            # Add LLVM repository for newer Clang versions
+            if [[ "${version}" -ge 17 ]]; then
+              wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+              sudo add-apt-repository "deb http://apt.llvm.org/noble/ llvm-toolchain-noble-${version} main"
+              sudo apt-get update
+            fi
             sudo apt-get install -y "clang-${version}"
             echo "CXX=clang++-${version}" >> "$GITHUB_ENV"
           fi
@@ -36,7 +42,12 @@ jobs:
           echo "Using compiler: $CXX"
           for file in exemples/*.cpp; do
             echo "Compiling $file"
-            $CXX -std=c++20 -Wall -Wextra -Wpedantic -Werror "$file" -o "${file%.cpp}"
+            # Use C++23 for files that need it
+            if grep -q "<print>" "$file"; then
+              $CXX -std=c++23 -Wall -Wextra -Wpedantic -Werror "$file" -o "${file%.cpp}"
+            else
+              $CXX -std=c++20 -Wall -Wextra -Wpedantic -Werror "$file" -o "${file%.cpp}"
+            fi
           done
 
       # Optionnel : exécuter les binaires si aucune entrée n'est requise.
