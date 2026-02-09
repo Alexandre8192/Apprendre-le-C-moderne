@@ -6,6 +6,34 @@ Guide pratique pour compiler et exécuter les exemples et exercices de ce cours.
 
 ---
 
+## ✅ Compilateurs recommandés et versions minimales
+
+- **GCC 11+** pour un support C++20 complet
+- **Clang 14+** pour un support C++20 complet
+- **MSVC 2022+** pour C++20/23
+
+### Vérifier la version
+
+```bash
+g++ --version
+clang++ --version
+```
+
+```powershell
+cl
+```
+
+---
+
+## 🧰 IDEs et éditeurs recommandés
+
+- **Visual Studio Code** + extensions C/C++
+- **CLion**
+- **Visual Studio 2022**
+- **Compilation en ligne** : [Compiler Explorer](https://godbolt.org/), [Wandbox](https://wandbox.org/)
+
+---
+
 ## 🛠️ Compilation de Base
 
 ### GCC (Linux/macOS/Windows avec MSYS2)
@@ -250,6 +278,32 @@ undefined reference to 'maFonction()'
 
 **Solution :** Assurez-vous que tous les fichiers sources sont compilés et linkés.
 
+#### Erreur : "filesystem" non trouvé (anciens GCC)
+
+**Cause :** `std::filesystem` nécessite parfois le lien explicite.
+
+**Solution :**
+
+```bash
+g++ -std=c++17 fichier.cpp -lstdc++fs
+```
+
+#### Erreur : flags manquants
+
+**Cause :** Absence de `-std=c++20` ou de warnings.
+
+**Solution :** Ajoutez `-std=c++20 -Wall -Wextra -Wpedantic`.
+
+#### Erreur : chemin d'include
+
+**Cause :** Header non trouvé.
+
+**Solution :** Utilisez `-I` pour ajouter un chemin :
+
+```bash
+g++ -Iinclude -std=c++20 fichier.cpp -o programme
+```
+
 #### Erreur : "redefinition"
 
 ```
@@ -372,6 +426,28 @@ Usage :
 ```bash
 make           # Compiler
 make clean     # Nettoyer
+```
+
+---
+
+## 🧱 Build systems (aperçu)
+
+### Pourquoi utiliser un build system ?
+
+- Gérer des projets multi-fichiers
+- Automatiser la compilation
+- Centraliser les flags et options
+
+### Exemple minimal de CMakeLists.txt
+
+```cmake
+cmake_minimum_required(VERSION 3.20)
+project(MonProjet LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(programme main.cpp)
 ```
 
 ---

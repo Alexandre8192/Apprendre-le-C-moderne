@@ -2,169 +2,177 @@
 
 ## 🎯 Objectif
 
-Découvrir les algorithmes de la STL pour écrire du code **plus lisible**, **plus sûr** et **plus performant** en C++ moderne.
+Maîtriser les algorithmes standards pour écrire du code **plus lisible**, **plus sûr** et **plus performant**.
 
-## 🧭 Pourquoi utiliser les algorithmes ?
+## 🧭 Pourquoi utiliser les algorithmes STL ?
 
-Les algorithmes STL permettent de **décrire l'intention** plutôt que la mécanique.
+Les algorithmes de la STL permettent de décrire **ce que l'on veut faire** au lieu de détailler chaque boucle manuelle.
 
-✅ Moins de boucles manuelles
+✅ Intention plus claire
 ✅ Moins d'erreurs
-✅ Code plus clair
+✅ Code réutilisable et optimisé
 
-## 🗂️ Catégories d'algorithmes
+## 📚 Catégories d'algorithmes
 
-### 🔍 Recherche
+### 1. Recherche
 
-Chercher un élément, un motif, ou une condition.
-
-### 🔃 Tri
-
-Trier des éléments selon un ordre naturel ou personnalisé.
-
-### 🔁 Transformation
-
-Créer un résultat à partir d'une collection existante.
-
-### ➕ Agrégation
-
-Calculer une somme, un total, un minimum/maximum, etc.
-
-### 🛠️ Modification
-
-Modifier, filtrer, supprimer des éléments.
-
-## 🔍 Recherche
-
-### Exemple : trouver le premier prix élevé
+Permet de localiser un élément ou un motif dans une collection.
 
 ```cpp
 #include <algorithm>
+#include <string>
 #include <vector>
-#include <iostream>
 
-int main() {
-    std::vector<double> prix = {9.99, 14.5, 2.0, 49.0, 12.0};
+std::vector<std::string> noms = {"Alice", "Bob", "Chloé", "David"};
 
-    auto it = std::find_if(prix.begin(), prix.end(), [](double p) {
-        return p > 20.0; // On cherche un prix > 20
-    });
-
-    if (it != prix.end()) {
-        std::cout << "Premier prix > 20 : " << *it << "\n";
-    }
-}
+auto it = std::find(noms.begin(), noms.end(), "Bob");
+auto it2 = std::find_if(noms.begin(), noms.end(),
+                        [](const auto& nom) { return nom.size() == 5; });
 ```
 
-💡 **Cas d'usage** : détecter le premier produit en promotion ou hors budget.
+Pour les collections triées :
+- `std::binary_search`
+- `std::lower_bound` / `std::upper_bound`
 
-## 🔃 Tri
+```cpp
+std::vector<int> notes = {8, 10, 12, 15, 18};
 
-### Exemple : trier des utilisateurs par âge décroissant
+bool existe = std::binary_search(notes.begin(), notes.end(), 12);
+auto debutPlage = std::lower_bound(notes.begin(), notes.end(), 10);
+auto finPlage = std::upper_bound(notes.begin(), notes.end(), 15);
+```
+
+### 2. Tri
+
+Organise les données selon un critère.
 
 ```cpp
 #include <algorithm>
 #include <vector>
-#include <string>
-#include <iostream>
 
-struct Utilisateur {
+std::vector<int> valeurs = {5, 2, 9, 1, 4};
+std::sort(valeurs.begin(), valeurs.end());
+```
+
+Avec comparateur personnalisé :
+
+```cpp
+struct Produit {
     std::string nom;
-    int age;
+    double prix;
 };
 
-int main() {
-    std::vector<Utilisateur> utilisateurs = {
-        {"Alice", 30}, {"Bob", 25}, {"Chloé", 40}
-    };
+std::vector<Produit> produits = {{"Clavier", 49.9}, {"Écran", 199.9}};
 
-    std::sort(utilisateurs.begin(), utilisateurs.end(),
-        [](const Utilisateur& a, const Utilisateur& b) {
-            return a.age > b.age; // Tri décroissant
-        });
-
-    for (const auto& u : utilisateurs) {
-        std::cout << u.nom << " (" << u.age << ")\n";
-    }
-}
+std::sort(produits.begin(), produits.end(),
+          [](const auto& a, const auto& b) { return a.prix < b.prix; });
 ```
 
-💡 **Cas d'usage** : afficher un classement, ordonner des résultats.
+Variantes utiles :
+- `std::stable_sort` (garde l'ordre relatif)
+- `std::partial_sort` (trie seulement une partie)
 
-## 🔁 Transformation
+### 3. Transformation
 
-### Exemple : convertir des températures
+Applique une opération à chaque élément.
 
 ```cpp
 #include <algorithm>
 #include <vector>
-#include <iostream>
 
-int main() {
-    std::vector<double> celsius = {0.0, 20.0, 37.0};
-    std::vector<double> fahrenheit(celsius.size());
+std::vector<int> valeurs = {1, 2, 3, 4};
+std::vector<int> doubles;
 
-    std::transform(celsius.begin(), celsius.end(), fahrenheit.begin(),
-        [](double c) {
-            return c * 9.0 / 5.0 + 32.0; // Conversion
-        });
-
-    for (double f : fahrenheit) {
-        std::cout << f << " ";
-    }
-}
+std::transform(valeurs.begin(), valeurs.end(), std::back_inserter(doubles),
+               [](int v) { return v * 2; });
 ```
 
-💡 **Cas d'usage** : convertir, normaliser, formater des données.
+Autres algorithmes pratiques :
+- `std::for_each`
+- `std::copy` / `std::copy_if`
 
-## ➕ Agrégation
+### 4. Agrégation
 
-### Exemple : somme des ventes du jour
+Calcule des statistiques globales.
 
 ```cpp
 #include <numeric>
 #include <vector>
-#include <iostream>
 
-int main() {
-    std::vector<int> ventes = {120, 80, 200, 50};
-
-    int total = std::accumulate(ventes.begin(), ventes.end(), 0,
-        [](int acc, int v) {
-            return acc + v; // Accumulation
-        });
-
-    std::cout << "Total : " << total << "\n";
-}
+std::vector<int> valeurs = {3, 5, 7};
+int somme = std::accumulate(valeurs.begin(), valeurs.end(), 0);
 ```
 
-💡 **Cas d'usage** : totaux, moyennes, calculs statistiques.
-
-## 🛠️ Modification
-
-### Exemple : supprimer les valeurs négatives
+Compter et trouver des extrêmes :
 
 ```cpp
-#include <algorithm>
-#include <vector>
-#include <iostream>
+int nbPairs = std::count_if(valeurs.begin(), valeurs.end(),
+                            [](int v) { return v % 2 == 0; });
 
-int main() {
-    std::vector<int> valeurs = {5, -3, 2, -1, 8};
-
-    auto fin = std::remove_if(valeurs.begin(), valeurs.end(), [](int v) {
-        return v < 0; // On retire les négatifs
-    });
-
-    valeurs.erase(fin, valeurs.end()); // Nettoyage final
-
-    for (int v : valeurs) {
-        std::cout << v << " ";
-    }
-}
+auto mini = std::min_element(valeurs.begin(), valeurs.end());
+auto maxi = std::max_element(valeurs.begin(), valeurs.end());
 ```
 
-💡 **Cas d'usage** : filtrer, nettoyer des données.
+### 5. Modification
+
+Modifie le contenu ou la structure des collections.
+
+```cpp
+std::vector<int> valeurs = {1, 2, 2, 3, 4};
+
+std::sort(valeurs.begin(), valeurs.end());
+auto nouvelleFin = std::unique(valeurs.begin(), valeurs.end());
+valeurs.erase(nouvelleFin, valeurs.end());
+```
+
+Remove-erase idiom :
+
+```cpp
+auto fin = std::remove_if(valeurs.begin(), valeurs.end(),
+                          [](int v) { return v < 3; });
+valeurs.erase(fin, valeurs.end());
+```
+
+Autres outils :
+- `std::reverse`
+- `std::rotate`
+
+## 💡 Exemples pratiques
+
+### Trouver le premier prix élevé
+
+```cpp
+std::vector<double> prix = {9.99, 14.5, 2.0, 49.0, 12.0};
+
+auto it = std::find_if(prix.begin(), prix.end(),
+                       [](double p) { return p > 20.0; });
+```
+
+### Filtrer des données client
+
+```cpp
+std::vector<int> ages = {12, 17, 21, 25, 14};
+std::vector<int> majeurs;
+
+std::copy_if(ages.begin(), ages.end(), std::back_inserter(majeurs),
+             [](int age) { return age >= 18; });
+```
+
+### Agréger un chiffre d'affaires
+
+```cpp
+struct Commande {
+    std::string id;
+    double montant;
+};
+
+std::vector<Commande> commandes = {{"A1", 120}, {"B2", 45}, {"C3", 300}};
+
+double total = std::accumulate(commandes.begin(), commandes.end(), 0.0,
+                               [](double sum, const auto& c) {
+                                   return sum + c.montant;
+                               });
+```
 
 ## ✅ Bon vs ❌ Mauvais
 
@@ -172,30 +180,27 @@ int main() {
 
 ```cpp
 int total = 0;
-for (int v : ventes) {
-    total += v; // On additionne à la main
+for (int v : valeurs) {
+    total += v;
 }
 ```
 
 ### ✅ Bon : algorithme explicite
 
 ```cpp
-int total = std::accumulate(ventes.begin(), ventes.end(), 0);
+int total = std::accumulate(valeurs.begin(), valeurs.end(), 0);
 ```
 
-## 🧪 Exercices progressifs
+## 🎯 Exercices progressifs
 
-### 1️⃣ Facile : compter les éléments pairs
+1. **Recherche** : trouver le premier étudiant avec moyenne > 15.
+2. **Transformation** : convertir des notes sur 20 en notes sur 100.
+3. **Filtrage + tri** : garder les valeurs positives puis trier en ordre décroissant.
 
-Créez un tableau d'entiers et utilisez `std::count_if` pour compter les nombres pairs.
+---
 
-### 2️⃣ Intermédiaire : normaliser des notes
+✅ **À retenir :** privilégiez les algorithmes STL avant d'écrire une boucle manuelle.
 
-À partir d'une liste de notes sur 20, transformez-les sur 100 avec `std::transform`.
+## 📚 Prochaine étape
 
-### 3️⃣ Avancé : filtrer et trier
-
-- Garder uniquement les valeurs positives.
-- Trier le résultat par ordre décroissant.
-
-💡 Utilisez `std::remove_if` + `erase` puis `std::sort`.
+Passez au chapitre suivant : [Entrées/Sorties et Fichiers](06-io-fichiers.md)

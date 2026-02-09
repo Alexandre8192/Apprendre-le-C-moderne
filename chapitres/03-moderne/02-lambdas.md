@@ -355,4 +355,4 @@ std::cout << somme(nombres) << "\n";  // 15
 
 ## 📚 Prochaine étape
 
-Passez au chapitre suivant : [Concepts C++20](03-concepts.md)
+Passez au chapitre suivant : [Conteneurs STL](03-conteneurs.md)

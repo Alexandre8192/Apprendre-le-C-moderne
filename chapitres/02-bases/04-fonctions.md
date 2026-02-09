@@ -304,4 +304,4 @@ double puissanceRec(double base, int exposant) {
 
 ## 📚 Prochaine étape
 
-Passez au [Chapitre 3 : C++ Moderne](../03-moderne/01-auto-deduction.md)
+Passez au chapitre suivant : [Classes et Objets](05-classes-objets.md)

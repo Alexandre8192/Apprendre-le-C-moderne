@@ -411,4 +411,4 @@ int main() {
 
 ## 📚 Prochaine étape
 
-Passez au chapitre suivant : [Algorithmes STL](04-algorithmes.md)
+Passez au chapitre suivant : [Gestion des Erreurs](04-exceptions-optional.md)

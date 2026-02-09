@@ -471,4 +471,4 @@ Implémentez un système de validation d'email qui lance des exceptions appropri
 
 ## 📚 Prochaine étape
 
-Passez au chapitre suivant : [Entrées/Sorties et Fichiers](05-io-fichiers.md)
+Passez au chapitre suivant : [Algorithmes STL](05-algorithmes-stl.md)

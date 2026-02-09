@@ -1,5 +1,7 @@
 # Apprendre le C et le C++ Moderne 🚀
 
+[![Compile Examples](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/compile-examples.yml/badge.svg)](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/compile-examples.yml)
+
 Bienvenue dans ce répertoire français pour apprendre le **C11 à C20** et découvrir les bases du **C++ moderne**, avec une **introduction à C++23**, de manière ludique et progressive !
 
 ## 📚 À propos
@@ -18,7 +20,8 @@ Ce répertoire est conçu pour les **débutants** qui souhaitent apprendre le C 
 ├── chapitres/          # Cours théoriques organisés par thème
 ├── exemples/           # Exemples de code fonctionnels
 ├── exercices/          # Exercices pratiques avec solutions
-└── bonnes-pratiques/   # Guide des bonnes pratiques C++ moderne
+├── bonnes-pratiques/   # Guide des bonnes pratiques C++ moderne
+└── projets/            # Mini-projets fil rouge
 ```
 
 ## 🎯 Prérequis
@@ -56,6 +59,10 @@ Pour suivre ce cours, vous aurez besoin de :
 - Lambda expressions
 - **Conteneurs STL** ✨ NOUVEAU
 - **Gestion des erreurs (exceptions, std::optional)** ✨ NOUVEAU
+- **Algorithmes STL** ✨ NOUVEAU
+- **Entrées/Sorties et fichiers** ✨ NOUVEAU
+- **Move semantics** ✨ NOUVEAU
+- **Panorama C++20/23** ✨ NOUVEAU
 - Concepts (à venir)
 - Ranges (à venir)
 - Coroutines (à venir)

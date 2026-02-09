@@ -411,4 +411,4 @@ int main() {
 
 ## 📚 Prochaine étape
 
-Passez au chapitre suivant : [Héritage et Polymorphisme](05-heritage.md)
+Passez au chapitre suivant : [Héritage et Polymorphisme](06-heritage-polymorphisme.md)
