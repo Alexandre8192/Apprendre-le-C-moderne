@@ -2,27 +2,30 @@
 
 Ce document présente l'état actuel du cours et les prochaines priorités.
 
-## Etat Actuel (Version 1.2)
+## Etat Actuel (Version 1.3)
 
 ### Chapitres disponibles
 
 - Chapitre 1 - Introduction (2 leçons)
 - Chapitre 2 - Bases du C++ (6 leçons)
-- Chapitre 3 - C++ moderne (8 leçons)
+- Chapitre 3 - C++ moderne (10 leçons)
 - Chapitre 4 - Bonnes pratiques (1 guide)
 
-Total: **17 leçons**
+Total: **19 leçons**
 
 ### Exemples de code
 
-- 11 exemples compilables dans `exemples/`
-- CI GitHub Actions de compilation active
+- 13 exemples compilables dans `exemples/`
+- CI GitHub Actions:
+  - compilation + exécution smoke des exemples
+  - tests pédagogiques automatisés
 
 ### Exercices
 
 - 8 exercices débutants
 - 13 exercices intermédiaires
-- Solutions publiées progressivement
+- Corrigés débutants publiés
+- Corrigés intermédiaires partiels publiés
 
 ### Projet fil rouge
 
@@ -30,23 +33,23 @@ Total: **17 leçons**
 
 ---
 
-## Priorités Prochaines (Version 1.3)
+## Priorités Prochaines (Version 1.4)
 
-### 1. Concepts et Ranges (C++20)
+### 1. Templates avancés et généricité
 
-- Chapitre dédié aux concepts
-- Chapitre dédié aux ranges
-- Exemples associés
+- Chapitre dédié aux templates avancés
+- Exercices ciblés (spécialisation, variadic, contraintes)
+- Exemple concret de design générique
 
 ### 2. Qualité et tests
 
 - Ajouter une base de tests unitaires (doctest/Catch2)
-- Ajouter des vérifications automatiques de liens Markdown
+- Etendre les tests pédagogiques à plus de chapitres
 - Ajouter un contrôle style (clang-format ou équivalent)
 
 ### 3. Exercices et corrigés
 
-- Ajouter des corrigés concrets pour les niveaux débutant/intermédiaire
+- Compléter les corrigés intermédiaires (tous les exercices)
 - Ajouter des exercices "challenge" orientés entretien/projet
 
 ---
@@ -70,15 +73,15 @@ Total: **17 leçons**
 ## Objectifs Long Terme
 
 - Un parcours C++ moderne complet, progressif et maintenable
-- Un dépôt où tout exemple publié compile en CI
+- Un dépôt où tout exemple publié compile et s'exécute en CI
 - Une banque d'exercices avec corrigés utilisables en autonomie
 
 ---
 
 ## Statistiques de référence
 
-- Leçons: **17**
-- Exemples: **11**
+- Leçons: **19**
+- Exemples: **13**
 - Exercices: **21**
 - Projets: **1**
 

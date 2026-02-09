@@ -10,10 +10,20 @@ Créons le programme classique "Hello, World!" en version moderne :
 
 ```cpp
 #include <iostream>
+
+#if __has_include(<print>)
 #include <print>  // C++23
+#define HAS_STD_PRINT 1
+#else
+#define HAS_STD_PRINT 0
+#endif
 
 int main() {
+#if HAS_STD_PRINT
     std::println("Hello, World!");
+#else
+    std::cout << "Hello, World!\n";
+#endif
     return 0;
 }
 ```
@@ -22,7 +32,9 @@ int main() {
 
 ```cpp
 #include <iostream>  // Inclut la bibliothèque d'entrée/sortie
-#include <print>     // Inclut la nouvelle bibliothèque print (C++23)
+#if __has_include(<print>)
+#include <print>     // Inclut la bibliothèque print (C++23)
+#endif
 ```
 - Les directives `#include` permettent d'utiliser des fonctionnalités de la bibliothèque standard.
 
@@ -40,26 +52,26 @@ int main() {
 std::println("Hello, World!");
 ```
 - `std::println` (C++23) affiche du texte suivi d'un retour à la ligne.
-- Alternative C++20 : `std::cout << "Hello, World!\n";`
+- Si `<print>` n'est pas disponible, utilisez `std::cout`.
 
 ## 🔨 Compilation
 
 ### Méthode simple (un seul fichier)
 
 ```bash
-g++ -std=c++23 hello.cpp -o hello
+g++ -std=c++20 hello.cpp -o hello
 ./hello
 ```
 
 ### Méthode avec flags de compilation recommandés
 
 ```bash
-g++ -std=c++23 -Wall -Wextra -O2 hello.cpp -o hello
+g++ -std=c++20 -Wall -Wextra -O2 hello.cpp -o hello
 ./hello
 ```
 
 **Explications des flags :**
-- `-std=c++23` : Utilise le standard C++23
+- `-std=c++20` : Utilise le standard C++20
 - `-Wall -Wextra` : Active les avertissements (warnings)
 - `-O2` : Optimise le code
 

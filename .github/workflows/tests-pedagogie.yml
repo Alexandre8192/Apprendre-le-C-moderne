@@ -1,12 +1,12 @@
-name: Compile Examples
+name: Pedagogical Tests
 
 on:
   push:
   pull_request:
 
 jobs:
-  build:
-    runs-on: ubuntu-24.04  # Ubuntu 24.04 has better support for newer compilers
+  tests:
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
@@ -31,24 +31,18 @@ jobs:
             echo "CXX=clang++-${version}" >> "$GITHUB_ENV"
           fi
 
-      - name: Compile all examples
+      - name: Compile pedagogical tests
         run: |
-          echo "Using compiler: $CXX"
-          for file in exemples/*.cpp; do
-            echo "Compiling $file"
-            # Use C++23 for files that need it
-            if grep -q "<print>" "$file"; then
-              $CXX -std=c++23 -Wall -Wextra -Wpedantic -Werror "$file" -o "${file%.cpp}"
-            else
-              $CXX -std=c++20 -Wall -Wextra -Wpedantic -Werror "$file" -o "${file%.cpp}"
-            fi
+          mkdir -p build/tests
+          for file in tests/pedagogie/*.cpp; do
+            base=$(basename "$file" .cpp)
+            echo "Compiling $file with $CXX"
+            $CXX -std=c++20 -Wall -Wextra -Wpedantic -Werror -O2 "$file" -o "build/tests/$base"
           done
 
-      - name: Run examples (smoke test)
+      - name: Run pedagogical tests
         run: |
-          for bin in exemples/*; do
-            if [[ -x "$bin" && "$bin" != *.cpp ]]; then
-              echo "Running $bin"
-              "$bin" >/dev/null
-            fi
+          for bin in build/tests/*; do
+            echo "Running $bin"
+            "$bin"
           done

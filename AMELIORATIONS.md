@@ -13,15 +13,20 @@ Ce document suit les améliorations déjà intégrées et celles encore prévues
 - Ajout des I/O fichiers (`fstream`, `filesystem`)
 - Ajout de move semantics
 - Ajout d'un panorama C++20/23
+- Ajout de chapitres dédiés Concepts C++20 et Ranges C++20
 
 ### Exemples et projet
 
-- Extension des exemples jusqu'à `11-fichiers-io.cpp`
+- Extension des exemples jusqu'à `13-ranges.cpp`
 - Ajout du projet fil rouge `todo.cpp` + guide
+- Publication de corrigés débutants et de corrigés intermédiaires partiels
 
 ### Qualité du dépôt
 
 - Workflow CI de compilation des exemples
+- Exécution smoke des exemples en CI
+- Workflow CI de tests pédagogiques dédiés
+- Vérification automatique des liens Markdown en CI
 - Liens Markdown corrigés
 - Conflits de fusion nettoyés
 - Structure des dossiers harmonisée
@@ -43,14 +48,13 @@ Ce document suit les améliorations déjà intégrées et celles encore prévues
 
 ### Priorité haute
 
-- Ajouter des corrigés complets d'exercices (débutant/intermédiaire)
-- Couvrir Concepts et Ranges avec exemples compilables
-- Ajouter des tests unitaires simples sur des extraits clés
+- Compléter tous les corrigés intermédiaires
+- Ajouter des tests unitaires de bibliothèque (ex: fonctions utilitaires)
+- Ajouter un chapitre templates avancés
 
 ### Priorité moyenne
 
 - Ajouter un guide de debugging/profiling
-- Ajouter un chapitre templates avancés
 - Standardiser le style de code (format automatique)
 
 ### Priorité basse

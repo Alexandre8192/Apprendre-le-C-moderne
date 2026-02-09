@@ -183,3 +183,7 @@ std::cout << std::format("{:>8.2f}", pi) << '\n';
 ---
 
 ✅ **À retenir :** combinez les flux (`fstream`) et `std::filesystem` pour un code robuste et moderne.
+
+## 📚 Prochaine étape
+
+Passez au chapitre suivant : [Move Semantics](07-move-semantics.md)

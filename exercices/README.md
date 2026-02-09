@@ -8,6 +8,8 @@ Bienvenue dans la section exercices ! Ici, vous trouverez des exercices progress
 
 - **[01-debutant.md](01-debutant.md)** : Exercices pour débuter (8 exercices)
 - **[02-intermediaire.md](02-intermediaire.md)** : Exercices intermédiaires (13 exercices)
+- **[solutions/debutant/README.md](solutions/debutant/README.md)** : Corrigés débutants
+- **[solutions/intermediaire/README.md](solutions/intermediaire/README.md)** : Corrigés intermédiaires
 
 ## 🎯 Comment utiliser ces exercices ?
 

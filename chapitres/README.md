@@ -44,8 +44,10 @@ Bienvenue dans les chapitres de cours pour apprendre le **C++ moderne** (fondame
 - [3.6 - Entrées/Sorties et Fichiers](03-moderne/06-io-fichiers.md)
 - [3.7 - Move Semantics](03-moderne/07-move-semantics.md)
 - [3.8 - Panorama C++20/23](03-moderne/08-panorama-cpp20-23.md)
+- [3.9 - Concepts C++20](03-moderne/09-concepts.md)
+- [3.10 - Ranges C++20](03-moderne/10-ranges.md)
 
-**Durée estimée** : 12-16 heures
+**Durée estimée** : 14-20 heures
 
 ---
 

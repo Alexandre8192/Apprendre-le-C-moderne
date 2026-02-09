@@ -1,6 +1,8 @@
 # Apprendre le C++ Moderne 🚀
 
 [![Compile Examples](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/compile-examples.yml/badge.svg)](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/compile-examples.yml)
+[![Tests Pedagogiques](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/tests-pedagogie.yml/badge.svg)](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/tests-pedagogie.yml)
+[![Check Doc Links](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/check-doc-links.yml/badge.svg)](https://github.com/Alexandre8192/Apprendre-le-C-moderne/actions/workflows/check-doc-links.yml)
 
 Bienvenue dans ce répertoire francophone pour apprendre le **C++ moderne** (bases solides + pratiques actuelles), avec un focus sur **C++20** et une ouverture vers **C++23**.
 
@@ -21,6 +23,7 @@ Ce répertoire est conçu pour les **débutants** qui souhaitent apprendre le C+
 ├── exemples/           # Exemples de code fonctionnels
 ├── exercices/          # Exercices pratiques (solutions ajoutées progressivement)
 ├── bonnes-pratiques/   # Guide des bonnes pratiques C++ moderne
+├── tests/              # Tests pédagogiques automatisés
 └── projets/            # Mini-projets fil rouge
 ```
 
@@ -63,11 +66,11 @@ Pour suivre ce cours, vous aurez besoin de :
 - **Entrées/Sorties et fichiers** ✨ NOUVEAU
 - **Move semantics** ✨ NOUVEAU
 - **Panorama C++20/23** ✨ NOUVEAU
-- Concepts (à venir)
-- Ranges (à venir)
+- **Concepts C++20** ✨ NOUVEAU
+- **Ranges C++20** ✨ NOUVEAU
 - Coroutines (à venir)
 - Modules (à venir)
-> Roadmap : les thèmes avancés (concepts, ranges, modules, coroutines) seront introduits progressivement avec des exemples guidés.
+> Roadmap : les thèmes avancés restants (coroutines, modules) seront introduits progressivement avec des exemples guidés.
 
 ### Chapitre 4 : Bonnes pratiques
 - Style de code

@@ -10,7 +10,7 @@ Ce dossier contient des exemples pratiques de code C++ moderne commentés et fon
 
 | Fichier | Description | Concepts |
 |---------|-------------|----------|
-| [`01-hello-world.cpp`](01-hello-world.cpp) | Premier programme | std::println (C++23), std::cout |
+| [`01-hello-world.cpp`](01-hello-world.cpp) | Premier programme | std::println (C++23 si dispo), std::cout |
 | [`02-variables-types.cpp`](02-variables-types.cpp) | Variables et types | auto, types de base, string |
 | [`03-boucles.cpp`](03-boucles.cpp) | Structures de boucles | for, range-based for, while |
 | [`04-fonctions.cpp`](04-fonctions.cpp) | Fonctions diverses | templates, constexpr, récursivité |
@@ -26,6 +26,8 @@ Ce dossier contient des exemples pratiques de code C++ moderne commentés et fon
 | [`09-conteneurs-stl.cpp`](09-conteneurs-stl.cpp) | Conteneurs STL | vector, map, set, unordered_map |
 | [`10-algorithmes-stl.cpp`](10-algorithmes-stl.cpp) | Algorithmes STL | sort, find_if, copy_if, accumulate |
 | [`11-fichiers-io.cpp`](11-fichiers-io.cpp) | I/O modernes | fstream, filesystem, CSV |
+| [`12-concepts.cpp`](12-concepts.cpp) | Concepts C++20 | requires, concepts, contraintes |
+| [`13-ranges.cpp`](13-ranges.cpp) | Ranges C++20 | views, pipelines, ranges::sort |
 
 ## 🔨 Compilation
 
@@ -52,14 +54,14 @@ done
 # Nettoyer les exécutables
 rm -f 01-hello-world 02-variables-types 03-boucles 04-fonctions \
       05-smart-pointers 06-lambdas 07-gestion-etudiants 08-poo-polymorphisme \
-      09-conteneurs-stl 10-algorithmes-stl 11-fichiers-io
+      09-conteneurs-stl 10-algorithmes-stl 11-fichiers-io 12-concepts 13-ranges
 ```
 
 ## 📚 Ordre d'apprentissage recommandé
 
 1. **Débutant** : Exemples 01 à 04
 2. **Intermédiaire** : Exemples 05 à 06
-3. **Avancé** : Exemples 07 à 11
+3. **Avancé** : Exemples 07 à 13
 
 ## 💡 Conseils
 

@@ -2,7 +2,7 @@
 
 ## 🎯 Objectif
 
-Découvrir les fonctionnalités avancées de C++20/23 (couverture détaillée dans versions futures du cours).
+Découvrir les fonctionnalités avancées de C++20/23 avant de passer aux chapitres dédiés.
 
 ## 🔍 Concepts (C++20)
 
@@ -115,8 +115,8 @@ std::print("{} + {} = {}\n", 2, 3, 5);
 
 1. Maîtriser d'abord C++11/14/17/20 (contenu actuel du cours).
 2. Pratiquer avec des projets réels.
-3. Explorer concepts/ranges/modules quand les bases sont solides.
-4. Attendre la version 2.0 du cours pour les détails avancés.
+3. Enchaîner avec les chapitres dédiés [Concepts](09-concepts.md) et [Ranges](10-ranges.md).
+4. Garder modules/coroutines pour une étape avancée.
 
 ## 📚 Ressources
 
@@ -127,3 +127,7 @@ std::print("{} + {} = {}\n", 2, 3, 5);
 ---
 
 ✅ **À retenir :** C++20/23 apporte des outils puissants, mais ils deviennent vraiment utiles une fois les bases maîtrisées.
+
+## 📚 Prochaine étape
+
+Passez au chapitre suivant : [Concepts C++20](09-concepts.md)

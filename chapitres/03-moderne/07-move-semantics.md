@@ -139,3 +139,7 @@ Quand les définir :
 ---
 
 ✅ **À retenir :** les move semantics réduisent les copies et améliorent les performances.
+
+## 📚 Prochaine étape
+
+Passez au chapitre suivant : [Panorama C++20/23](08-panorama-cpp20-23.md)
